@@ -1,11 +1,20 @@
 #ifndef FOOD_H
 #define FOOD_H
 
+#include <QWidget>
+#include <QGraphicsItem>
+#include <QRectF>
+#include <QPainter>
+#include <QPainterPath>
 
-class food
+class Food : public QGraphicsItem
 {
 public:
-    food();
+    Food(qreal x, qreal y);
+
+    QRectF boundingRect() const;
+    void paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *);
+    QPainterPath shape() const;
 };
 
-#endif // FOOD_H
+#endif //  FOOD_H

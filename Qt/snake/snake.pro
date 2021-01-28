@@ -25,7 +25,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    gamecontroller.cpp \
+    snake.cpp \
+    wall.cpp \
+    foodbock.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    config.h \
+    gamecontroller.h \
+    wall.h \
+    foodbock.h \
+    snake.h
+
+RESOURCES += \
+    res.qrc
