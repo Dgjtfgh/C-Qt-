@@ -25,10 +25,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    settingdialog.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    settingdialog.h
 
 FORMS += \
         mainwindow.ui
+
+RESOURCES += \
+    translator.qrc
+
+TRANSLATIONS  +=  \
+        resources/tr_zh.ts\
+    resources/tr_en.ts
+
+DISTFILES +=
